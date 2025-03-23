@@ -4,15 +4,20 @@
 
 <img 
   [src]="logoUrl" 
-  alt="The BridgeLabz logo: a Bridge to Employment through Lab Works."
+  alt="The BridgeLabz logo"
   (click)="openBridgeLabzSite()"
-  style="cursor: pointer;"
+  class="logo"
 >
 
-<div style="text-align: center; margin-top: 20px;">
+<div class="input-container">
   <input 
     type="text" 
-    [(ngModel)]="userName" 
+    [(ngModel)]="userName"
+    (ngModelChange)="validateName()"
     placeholder="Enter your name"
+    class="input-box"
   >
+  <span class="error-output">
+    {{nameError}}
+  </span>
 </div>
