@@ -11,4 +11,8 @@ export class AppComponent {
   message = "Hello from BridgeLabz!";
 
   logoUrl = "https://media.glassdoor.com/sqll/1318507/bridgelabz-solutions-squarelogo-1576063675737.png";
+
+  openBridgeLabzSite() {
+    window.open("https://www.bridgelabz.com/", "_blank");
+  }
 }
