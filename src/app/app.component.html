@@ -1,3 +1,8 @@
 <h1>{{message}}</h1>
 
-<img [src]="logoUrl" alt="The BridgeLabz logo: a Bridge to Employment through Lab Works.">
+<img 
+  [src]="logoUrl" 
+  alt="The BridgeLabz logo: a Bridge to Employment through Lab Works."
+  (click)="openBridgeLabzSite()"
+  style="cursor:pointer;"
+>
