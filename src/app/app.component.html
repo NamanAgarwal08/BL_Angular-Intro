@@ -1,8 +1,18 @@
-<h1>{{message}}</h1>
+<!-- <h1>{{message}}</h1> -->
+
+<h1>Hello {{userName}} from BridgeLabz!</h1>
 
 <img 
   [src]="logoUrl" 
   alt="The BridgeLabz logo: a Bridge to Employment through Lab Works."
   (click)="openBridgeLabzSite()"
-  style="cursor:pointer;"
+  style="cursor: pointer;"
 >
+
+<div style="text-align: center; margin-top: 20px;">
+  <input 
+    type="text" 
+    [(ngModel)]="userName" 
+    placeholder="Enter your name"
+  >
+</div>
